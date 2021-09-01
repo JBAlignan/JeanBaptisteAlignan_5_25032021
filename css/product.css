@@ -1,0 +1,44 @@
+section div:first-of-type {
+    object-fit: cover;
+    margin: auto;
+}
+
+
+img{
+    object-fit: contain;
+}
+
+#quantityLayout {
+    display: flex;
+    align-items: center;
+}
+
+div#quantityLayout p {
+    margin-right: 1em;
+    margin-bottom: 0;
+}
+
+div#quantityLayout button{
+    width: 2em;
+    height: 2.3em;
+    border-radius: 5px 0 0 5px;
+}
+
+div#quantityLayout button:last-of-type{
+    width: 2em;
+    height: 2.3em;
+    border-radius: 0 5px 5px 0;
+}
+
+div#quantityLayout span{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 2em;
+    height: 2em;
+    border: 1px solid black;
+}
+
+
+
+

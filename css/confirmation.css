@@ -1,0 +1,8 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+    border: 1px solid #9bbb64;
+    background-color: #dfe9ce;
+}

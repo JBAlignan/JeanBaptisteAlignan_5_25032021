@@ -1,0 +1,90 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+nav{
+    background-color: #f3e9f1;
+}
+
+header{
+    margin-bottom: 2em;
+}
+
+header nav div a {
+    font-size: 2em !important;
+}
+
+header nav div div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-shopping-cart{
+    padding-right: 1em;
+    background: -webkit-linear-gradient(bottom right, #d3803b, #8f5bfe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#myContainer{
+    margin: auto;
+}
+
+#productSection{
+    width: 100%;
+}
+
+#align-container{
+    margin: auto;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#titleCardDisplay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.card-title{
+    margin: 0;
+}
+
+h1{
+    font-size: 1em;
+}
+
+#basketTitle{
+    display: flex;
+    justify-content: space-around;
+    max-width: 19em;
+    margin: auto;
+}
+
+div#basketTitle ~ button{
+    display: flex;
+    background-color: red;
+    margin: auto;
+}
+
+article.col-lg-10 {
+    margin: auto;
+}
+
+.fab{
+    font-size: 2em;
+    color: #1E1D1E;
+}
+
+footer{
+    bottom: 0;
+}
