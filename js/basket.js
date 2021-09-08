@@ -23,7 +23,7 @@ function basketDisplay() {
                     <p class = "card-text" > Quantité: ${element.quantity}</p>
                     <p class = "card-text" > Prix: ${price} &#128</p>
                     <button onclick="removeItem('${element.id}')" id="${element.id}" class="btn btn-dark" value="${element.id}">Supprimer</button>
-                    <button onclick="window.location.href='http://127.0.0.1:5501/pages/product.html?id=${element.id}'" id="editBtn" class="btn btn-dark" value="">Modifier</button>
+                    <button onclick="window.location.href='http://127.0.0.1:5500/pages/product.html?id=${element.id}'" id="editBtn" class="btn btn-dark" value="">Modifier</button>
                 </div>
               </div>
             </div>
@@ -56,7 +56,6 @@ function removeItem(productId) {
       window.location.href = "../index.html";
     };
   }
-
 
 //-------------------------------------------------------------------------
 

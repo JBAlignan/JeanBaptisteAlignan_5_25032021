@@ -22,14 +22,6 @@ header nav div div {
     justify-content: flex-end;
 }
 
-.fa-shopping-cart{
-    padding-right: 1em;
-    background: -webkit-linear-gradient(bottom right, #d3803b, #8f5bfe);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 #myContainer{
     margin: auto;
 }
@@ -42,7 +34,7 @@ header nav div div {
     margin: auto;
 }
 
-img{
+article img{
     object-fit: cover;
     width: 100%;
     height: 100%;

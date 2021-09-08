@@ -9,6 +9,7 @@ let optionValue;
 
 // Obtention de l'URL du produit consulté.
 const searchUrl = new URL(window.location.href);
+console.log(searchUrl);
 // Obtention de l'id du produit.
 const searchId = searchUrl.searchParams.get('id');
 
@@ -105,16 +106,6 @@ function command(event) {
     localStorage.setItem("basketShop", JSON.stringify(storageManagement));
   }
 }
-
-//Gestion du bouton Aller au panier.
-// function clickButton(event) {
-//   event.preventDefault();
-//   let basketLink = document.getElementById("basketLink");
-//   storageManagement = getLocalStorage();
-//   if (storageManagement.length !== 0) {
-//     basketLink.setAttribute("href", "/pages/basket.html");
-//   }
-// }
 
 //Obtention du localStorage.
 function getLocalStorage() {
