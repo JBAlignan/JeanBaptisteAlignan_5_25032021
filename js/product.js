@@ -9,7 +9,6 @@ let optionValue;
 
 // Obtention de l'URL du produit consulté.
 const searchUrl = new URL(window.location.href);
-console.log(searchUrl);
 // Obtention de l'id du produit.
 const searchId = searchUrl.searchParams.get('id');
 
@@ -104,6 +103,8 @@ function command(event) {
       }
     }
     localStorage.setItem("basketShop", JSON.stringify(storageManagement));
+    //Afficher un message d'ajout au panier.
+    alert("Votre produit a été ajouter au panier");
   }
 }
 

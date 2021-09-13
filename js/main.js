@@ -44,7 +44,6 @@ function loadProducts() {
 //Réception du contenu du localStorage.
 //Comportement des liens vers le panier si le localStorage est vide.
 let basketShop = JSON.parse(localStorage.getItem("basketShop"));
-console.log(basketShop);
 
 function clickBasketLink() {
     if (basketShop === null || basketShop.length === 0) {

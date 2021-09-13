@@ -6,3 +6,8 @@ button a{
 button a:hover{
     color: white;
 }
+
+#myContainer article~p{
+    font-weight: bold;
+    font-size: 1.2em;
+}

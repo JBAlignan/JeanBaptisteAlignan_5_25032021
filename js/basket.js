@@ -5,11 +5,13 @@ let productDisplay = JSON.parse(localStorage.getItem("basketShop"));
 let selectedProduct;
 let optionValue;
 let cartContainer = [""];
+let totalBasket = 0;
 
 //Gestion de l'affichage des produits du panier.
 function basketDisplay() {
   productDisplay.forEach(function (element) {
     let price = element.price / 100;
+    totalBasket += price;
     cartContainer +=
       `<article id="${element.id}" value ="${element.id}" class = "col-lg-6">     
           <div class = "card mb-3">             
@@ -33,6 +35,13 @@ function basketDisplay() {
   let productSection = document.getElementById("productSection");
   productSection.innerHTML = cartContainer;
   productSection.insertAdjacentHTML("afterbegin", "<h2 class=h5>Votre panier</h2>");
+
+  productSection.insertAdjacentHTML('beforeend', '<p id="total"></p>');
+  let totalBasketDisplay = document.getElementById("total");
+  totalBasketDisplay.innerText = "Total: " + totalBasket + "\u20AC";
+
+  
+
 };
 basketDisplay();
 
